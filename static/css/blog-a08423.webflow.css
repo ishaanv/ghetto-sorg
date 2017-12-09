@@ -1,0 +1,156 @@
+.container {
+  height: 100%;
+}
+
+.nav-link {
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+
+.nav-menu {
+  position: relative;
+  top: 50px;
+  margin-top: 30px;
+  background-color: transparent;
+}
+
+.navbar {
+  width: 100px;
+}
+
+.container-2 {
+  background-color: #fff;
+  color: #fff;
+}
+
+.text-block {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 6.26em;
+}
+
+.column {
+  margin-top: 14px;
+}
+
+.div-block {
+  margin-top: 46px;
+  margin-bottom: 62px;
+}
+
+.divider-short {
+  position: relative;
+  left: 11%;
+  right: 12%;
+  display: block;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  float: left;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-width: 80%;
+  border-bottom-style: solid;
+  border-bottom-color: hsla(0, 0%, 53%, .73);
+  font-size: 1px;
+  text-align: center;
+}
+
+.row {
+  border-bottom: 1px solid #000;
+}
+
+.toc {
+  display: block;
+  width: 150px;
+  margin: -117px 0px 0px;
+  padding: 0px;
+  float: right;
+}
+
+.div-block-3 {
+  display: block;
+  max-width: 550px;
+  float: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.ordered-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 0.75rem;
+}
+
+.list-item {
+  position: relative;
+  left: 0px;
+  clear: none;
+}
+
+.container-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.div-block-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 65px;
+  padding-left: 65px;
+  float: none;
+  clear: both;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.index-about-and-lists {
+  display: block;
+}
+
+.activity {
+  width: 70%;
+  padding-left: 21px;
+}
+
+.div-block-5 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.activity-section {
+  width: 100%;
+  padding-left: 21px;
+}

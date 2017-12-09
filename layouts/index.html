@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+<body>
+  <div class="div-block-4">
+    <div class="div-block-5 w-clearfix">
+      <div class="index-about">
+        <h1 class="index-heading">About</h1>
+        <div id="index-about-stub"></div>
+      </div>
+      <div class="divider-short"></div>
+      <div class="index-articles">
+        <h1 class="index-heading">Articles</h1>
+            {{ range .Data.Pages.ByPublishDate }}
+                {{ if eq .Section "articles" }}
+                    <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
+                {{ end }}
+            {{ end }}
+
+        <div id="index-article-stub" class="index-article-stub"></div>
+      </div>
+    </div>
+    <div class="activity w-clearfix">
+      <div class="activity-section">
+        <h1 class="index-heading">Now</h1>
+        <div id="index-activity-layout"></div>
+      </div>
+      <div class="divider-short"></div>
+      <div id="acit" class="activity-section">
+        <h1 class="index-heading">Activity</h1>
+        <div id="index-activity-layout"></div>
+      </div>
+    </div>
+  </div>
+  {{ partial "header.html" . }}
+</body>
+</html>
