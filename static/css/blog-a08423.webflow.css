@@ -45,8 +45,8 @@
   right: 12%;
   display: block;
   width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+  height: auto;
+  margin: 30px auto;
   float: left;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -55,7 +55,7 @@
   border-width: 80%;
   border-bottom-style: solid;
   border-bottom-color: hsla(0, 0%, 53%, .73);
-  font-size: 1px;
+  background-color: #757575;
   text-align: center;
 }
 
@@ -139,11 +139,26 @@
 }
 
 .activity {
-  width: 70%;
-  padding-left: 21px;
+  width: 65%;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 0px;
+}
+
+.index-about {
+  margin-bottom: 1px;
+}
+
+.index-articles {
+  padding-top: 0px;
 }
 
 .div-block-5 {
+  margin: 30px 20px 2px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -152,5 +167,52 @@
 
 .activity-section {
   width: 100%;
-  padding-left: 21px;
+  padding-left: 0px;
+}
+
+.index-heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: -4px;
+}
+
+.unordered-list {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.index-article-heading {
+  text-decoration: none;
+}
+
+
+.index-article-heading {
+  margin-bottom: 0px;
+  font-size: 1.3rem;
+}
+
+.link {
+  color: #000;
+}
+
+.body {
+  margin-top: 41px;
+}
+
+@media (max-width: 991px) {
+  .activity {
+    margin-right: 2px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .div-block-5 {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }

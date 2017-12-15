@@ -9,9 +9,14 @@
       <div class="divider-short"></div>
       <div class="index-articles">
         <h1 class="index-heading">Articles</h1>
+        <div id="index-article-stub" class="index-article-stub">
+          <ul class="unordered-list">
             {{ range .Data.Pages.ByPublishDate }}
                 {{ if eq .Section "articles" }}
-                    <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
+                    <li>
+                    <a class="index-article-heading" href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
+                    <p class="index-article-subtitle">{{ .Params.stub }}</p>
+                    </li>
                 {{ end }}
             {{ end }}
 
