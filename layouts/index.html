@@ -3,8 +3,12 @@
     <div class="div-block-4">
     <div class="div-block-5 w-clearfix">
       <div class="index-about">
+        <!-- TODO make the headers on this page links to more detailed version of each. -->
         <h1 class="index-heading">About</h1>
-        <div id="index-about-stub">My name is Ishaan Varshney. I&#x27;m a software and machine learning engineer from <a href="/sydney" class="link">Sydney, Australia</a>. Here I write about stuff I&#x27;ve learned recently.</div>
+        <div id="index-about-stub">My name is Ishaan Varshney. I&#x27;m a software and machine learning engineer from <a href="/sydney" class="link">Sydney, Australia</a>.
+        <br>
+        <br>
+        Here I try to document and share thoughts and resources for the benefit of myself and (hopefully) others.</div>
       </div>
       <div class="divider-short"></div>
       <div class="index-articles">
@@ -14,7 +18,7 @@
            {{ range .Data.Pages.ByPublishDate }}
                 {{ if eq .Section "articles" }}
                     <li>
-                    <h1><a class="index-article-heading" href="{{ .Permalink }}"><span>{{ .Title }}</span></a></h1>
+                    <h1 class="index-article-heading"><a class="index-article-link" href="{{ .Permalink }}"><span>{{ .Title }}</span></a></h1>
                     <p class="index-article-subtitle">{{ .Params.stub }}</p>
                     </li>
                 {{ end }}
@@ -28,7 +32,7 @@
         <h1 class="index-heading">Now</h1>
         <div id="index-activity-layout">
           <ul>
-            <li>In the final year of my masters program in artificial intelligence at UNSW</li>
+            <li>In my final year of the masters program in artificial intelligence at UNSW</li>
             <li>Conducting network analysis and graph theory research at BVN architecture</li>
             <li>Teaching the design <a href="notionparallax.co.uk/CODE1161/2017-01-01-1161-outline" class="link">computing course at UNSW in semester 1, 2018</a></li>
             <li>Experiment with deep learning on various problems. Most recently with sentiment analysis of large texts.</li>
