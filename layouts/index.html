@@ -1,17 +1,17 @@
 {{ partial "header.html" . }}
 <body>
-  <div class="div-block-4">
+    <div class="div-block-4">
     <div class="div-block-5 w-clearfix">
       <div class="index-about">
         <h1 class="index-heading">About</h1>
-        <div id="index-about-stub"></div>
+        <div id="index-about-stub">My name is Ishaan Varshney. I&#x27;m a software and machine learning engineer from <a href="/sydney" class="link">Sydney, Australia</a>. Here I write about stuff I&#x27;ve learned recently.</div>
       </div>
       <div class="divider-short"></div>
       <div class="index-articles">
         <h1 class="index-heading">Articles</h1>
         <div id="index-article-stub" class="index-article-stub">
           <ul class="unordered-list">
-            {{ range .Data.Pages.ByPublishDate }}
+           {{ range .Data.Pages.ByPublishDate }}
                 {{ if eq .Section "articles" }}
                     <li>
                     <a class="index-article-heading" href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
@@ -19,18 +19,24 @@
                     </li>
                 {{ end }}
             {{ end }}
-
-        <div id="index-article-stub" class="index-article-stub"></div>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="activity w-clearfix">
       <div class="activity-section">
         <h1 class="index-heading">Now</h1>
-        <div id="index-activity-layout"></div>
+        <div id="index-activity-layout">
+          <ul>
+            <li>Network analysis problems</li>
+            <li>Convolutional neural networks</li>
+            <li>Sourdough Breads</li>
+          </ul>
+        </div>
       </div>
       <div class="divider-short"></div>
       <div id="acit" class="activity-section">
-        <h1 class="index-heading">Activity</h1>
+        <h1 class="index-heading"><br>Activity</h1>
         <div id="index-activity-layout"></div>
       </div>
     </div>
