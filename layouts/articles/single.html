@@ -1,25 +1,25 @@
 {{ partial "header.html" . }}
 
-<body>
-    <div class="container w-container">
-        <div class="row w-row">
-            <div class="w-col w-col-2">
-                <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
-                    <div class="container-2 w-container"><a href="#" class="w-nav-brand"></a>
-                        <nav role="navigation" class="nav-menu w-nav-menu"><a href="/" class="nav-link w-nav-link"><strong>Home</strong></a><a href="/articles" class="nav-link w-nav-link"><strong>Articles</strong></a><a href="/diary" class="nav-link w-nav-link"><strong>Diary</strong></a><a href="/reading" class="nav-link w-nav-link"><strong class="nav-link">Reading</strong></a><a href="/talks" class="nav-link w-nav-link"><strong class="nav-link">Talks</strong></a><a href="/now" class="nav-link w-nav-link"><strong>Now</strong></a><a href="/about" class="nav-link w-nav-link"><strong>About</strong></a></nav>
-                        <div class="w-nav-button">
-                            <div class="w-icon-nav-menu"></div>
-                        </div>
-                    </div>
-                </div>
+<body class="body-2">
+  <div class="container w-container">
+    <div class="row w-row">
+      <div class="w-col w-col-2">
+        <div data-collapse="none" data-animation="default" data-duration="400" class="navbar w-nav">
+          <div class="container-2 w-container"><a href="#" class="w-hidden-small w-hidden-tiny w-nav-brand"></a>
+            <nav role="navigation" class="nav-menu w-nav-menu"><a href="#" class="nav-link w-nav-link"><strong class="bold-text">Home</strong></a><a href="#" class="nav-link w-nav-link"><strong>Articles</strong></a><a href="#" class="nav-link w-nav-link"><strong>Diary</strong></a><a href="#" class="nav-link w-nav-link"><strong class="nav-link">Reading</strong></a><a href="#" class="nav-link w-nav-link"><strong class="nav-link">Talks</strong></a><a href="#" class="nav-link w-nav-link"><strong>Now</strong></a><a href="#" class="nav-link w-nav-link"><strong>About</strong></a></nav>
+            <div class="w-nav-button">
+              <div class="w-icon-nav-menu"></div>
             </div>
-            <div class="w-col w-col-1"></div>
-            <div class="column w-clearfix w-col w-col-9">
-                <div id="title" class="div-block">
+          </div>
+        </div>
+      </div>
+      <div class="w-col w-col-1"></div>
+      <div class="column w-col w-col-9">
+        <div id="title" class="div-block">
                     <h1 class="text-block">{{ .Title }}</h1>
                 </div>
                 <div id="data-location"></div>
-                <div class="divider-short"></div>
+                <!-- <div class="divider-short"></div> -->
                 <div id="article-content" class="div-block-3">
                     <section class="main">
                         <div class="markdown">
